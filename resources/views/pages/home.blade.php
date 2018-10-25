@@ -1,4 +1,4 @@
-@extends('layoutes.base')
+@extends('layoutes.base',['title'=>'Home'])
 
 
 @section('content')

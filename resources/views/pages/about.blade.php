@@ -1,4 +1,4 @@
-@extends('layoutes.base')
+@extends('layoutes.base',['title'=>'About'])
 
 
 @section('content')
@@ -19,7 +19,7 @@
     </div>
   </div>
   <p>
-       Feel free to help to improve the <a href="https://github.com/features">source code.</a>
+       Feel free to help to improve the <a href="https://github.com/ouhamzalhss/laracarte-oh" target="_blank">source code.</a>
   </p>
   <hr>
   <h2>What is Laramap?</h2>
