@@ -26,11 +26,11 @@ class ContactsController extends Controller
         $message->save();*/
        
         
-       $message = Message::create($request->only('name','email','message'));
+        $message = Message::create($request->only('name','email','message'));
         
         $mailable = new ContactMessageCreated($message);
         
-        Mail::to(config('laracarte.admin_support_email'))->send($mailable);
+        Mail::to(config('laracarte.admin_support_email'))->queue($mailable);
         
         Flashy::message('Nous vous repondrons dans les plus bréfs délais !');
         
